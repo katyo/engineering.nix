@@ -1,0 +1,11 @@
+diff --git a/scconfig/src/scripts/find_python.c b/scconfig/src/scripts/find_python.c
+index efde6a8..2723d01 100644
+--- a/scconfig/src/scripts/find_python.c
++++ b/scconfig/src/scripts/find_python.c
+@@ -49,7 +49,7 @@ static int find_script_python_(const char *name, int logdepth, int fatal, int ve
+ 		NL "import distutils.sysconfig;"
+ 		NL "print '-L' + distutils.sysconfig.PREFIX.replace('\\\\','/') + '/libs',;"
+ 		NL "import sys;"
+-		NL "print '-lpython' + str(sys.version_info[0]) + str(sys.version_info[1])"
++		NL "print '-lpython' + str(sys.version_info[0]) + '.' + str(sys.version_info[1])"
+ 		NL;

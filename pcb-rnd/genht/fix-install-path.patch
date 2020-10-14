@@ -1,0 +1,13 @@
+diff --git a/src/Makefile b/src/Makefile
+index 7bea158..09fc110 100644
+--- a/src/Makefile
++++ b/src/Makefile
+@@ -1,6 +1,6 @@
+ # use -Dinline if compiling with c89
+-INCDIR=$(install_root)$(DESTDIR)/usr/include/genht
+-LIBDIR=$(install_root)$(DESTDIR)/usr/lib
++INCDIR=$(DESTDIR)/include/genht
++LIBDIR=$(DESTDIR)/lib
+ 
+ VER_MAJOR=1
+ VER_MINOR=0
