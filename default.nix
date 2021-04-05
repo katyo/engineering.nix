@@ -23,4 +23,6 @@ self: super: with super; rec {
     gtk = gtk2;
     gtkglext = gnome2.gtkglext;
   };
+
+  gitui = callPackage ./gitui {};
 }
